@@ -1,0 +1,22 @@
+{
+    "name": "global-variables",
+    "version": "1.0.0",
+    "author": "Michael Hanus <mh@informatik.uni-kiel.de>",
+    "synopsis": "Library for handling global variables in PAKCS",
+    "category": [ "Programming" ],
+    "dependencies": { },
+    "exportedModules": [ "GlobalVariable" ],
+    "compilerCompatibility": {
+        "pakcs": ">= 2.0.0"
+    },
+    "testsuite": {
+        "src-dir": "test",
+        "modules": [ "TestGlobalVariable" ]
+    },
+    "license": "BSD-3-Clause",
+    "licenseFile": "LICENSE",
+    "source": {
+        "git": "https://git.ps.informatik.uni-kiel.de/curry-packages/global-variables.git",
+        "tag": "$version"
+    }
+}
