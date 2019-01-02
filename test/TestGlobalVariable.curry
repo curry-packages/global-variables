@@ -1,7 +1,7 @@
 -- Examples for testing library GlobalVariable
 
 import GlobalVariable
-import Test.EasyCheck
+import Test.Prop
 
 g :: GVar Int
 g = gvar 42
