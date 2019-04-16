@@ -13,14 +13,14 @@
 --- Currently, it is still experimental so that its interface might
 --- be slightly changed in the future.
 ---
---- A global variable <code>g</code> with an initial value <code>v</code>
---- of type <code>t</code> must be declared by:
+--- A global variable `g` with an initial value `v`
+--- of type `t` must be declared by:
 --- 
---- <code>g :: GVar t</code><br/>
---- <code>g = gvar v</code>
+---     g :: GVar t
+---     g = gvar v
 ---
---- Here, the type <code>t</code> must not contain type variables.
---- <code>v</code> is the initial value for every program run.
+--- Here, the type `t` must not contain type variables.
+--- `v` is the initial value for every program run.
 ---
 --- Note: the implementation in PAKCS is based on threading a state
 --- through the execution. Thus, it might be the case that
@@ -32,12 +32,13 @@
 --- @category general
 ------------------------------------------------------------------------------
 
-module GlobalVariable(GVar,gvar,writeGVar,readGVar) where
+module GlobalVariable (GVar, gvar, writeGVar, readGVar )
+ where
 
 --- The general type of global variables.
 data GVar a = GVarDef a | GVarValue () a
 
---- <code>gvar</code> is only used for the declaration of a global variable
+--- `gvar` is only used for the declaration of a global variable
 --- and should not be used elsewhere. In the future, it might become a keyword.
 gvar :: a -> GVar a
 gvar v = GVarDef v
