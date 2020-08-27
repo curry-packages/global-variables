@@ -29,7 +29,6 @@
 ---
 --- @author Michael Hanus
 --- @version March 2010
---- @category general
 ------------------------------------------------------------------------------
 
 module GlobalVariable (GVar, gvar, writeGVar, readGVar )
